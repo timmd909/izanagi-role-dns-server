@@ -33,4 +33,3 @@
     dest: /etc/bind/zones/in-addr.arpa
     state: present
     line: "{{ item.ip }} IN PTR {{ item.name }}.{{ dns_domain }}."
-
