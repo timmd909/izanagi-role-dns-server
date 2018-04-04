@@ -17,8 +17,8 @@
     - etc/bind/named.conf.local
     - etc/bind/zones/in-addr.arpa
     - etc/bind/zones/local.zone
-  notify:
-    - Restart BIND
+  # notify:
+  #   - Restart BIND
 
 - name: Add local host information
   with_items: "{{ internal_hosts }}"

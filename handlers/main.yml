@@ -1,8 +1,8 @@
 ---
 
-- name: Restart BIND
-  become: yes
-  become_user: root
-  service:
-    state: restarted
-    name: bind9
+# - name: Restart BIND
+#   become: yes
+#   become_user: root
+#   service:
+#     state: restarted
+#     name: bind9
