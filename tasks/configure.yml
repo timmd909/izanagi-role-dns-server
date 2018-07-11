@@ -1,7 +1,10 @@
 ---
 
 - name: Install Bind
-  apt: name=bind9
+  apt: name=bind9 state=latest
+
+- name: Install Bind utils
+  apt: name=bind9utils state=latest
 
 - name: Make sure Bind zones directory exists
   file:
